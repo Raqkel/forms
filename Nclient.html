@@ -23,56 +23,435 @@
   	</nav>
 
 				  
-	<div class="account">
-		<div class="container">
-			<form action="" id="">
+		<div class="account">
+			<div class="container">
+				<form action="" id="">
 
 				<div class="row">
 					<div class="col s12">
-						<span>Step One: Create Account Information</span>
+						<h5>Create Log In</h5>
 					</div>
 				</div>
 
-				 <div class="row valign-wrapper">
+				<div class="row valign-wrapper">
 
 			      <div class="col s12 m6">
 			      	<div class="input-field">
-		          	<input id="email" name="email" type="email" class="validate">
-		          	<label for="email">Email</label>
-				   		</div>
+		          		<input id="email" name="email" type="email" class="validate">
+		          		<label for="email">Email</label>
+				   	</div>
 
-				   		<div class="input-field">
+				   	<div class="input-field">
 				   			<input id="password" name="password" type="password" class="validate">
 				   			<label for="password">Password</label>
-				   		</div>
+				   	</div>
 
-				   		<div class="input-field">
+				   	<div class="input-field">
 				   			<input id="confirm" name="confirm" type="text" class="validate">
 				   			<label for="confirm">Confirm</label>
-				   		</div>
-			      </div>
+				   	</div>
+			      	</div>
 			   	
-			   		<div class="col s12 m6 center-align">
+			   	<div class="col s12 m6 center-align">
 							<h6>Are you a </h6>
-			   			<input type="radio" name="business">
-			   			<label for="business">Business</label>
-			   			<input type="radio" name="lawfirm">
-			   			<label for="lawfirm">Lawfirm</label>
+			   		<input type="radio" name="type" class="js-change-modal" data-modal="businessModal" name="business">
+			   		<label for="business">Business</label>
+			   		<input type="radio" name="type" class="js-change-modal" data-modal="lawfirmModal" name="lawfirm">
+			   		<label for="lawfirm">Lawfirm</label>
+				</div>
+					
+					</div>
+				</div>
+			</div>
+			
+
+
+		<a class="waves-effect waves-light btn modal-trigger center" href="#modal1"></a>
+
+
+			<div id="modal1" class="modal bottom-sheet">
+    			<div class="modal-content">
+      				<div class="container">
+      					
+      					<div class="row">
+      						<h5>Business Contact</h5>
+      						<div class="input-field col s5">
+      							<input type="text" name="Business">
+      							<label for="Business">Business Name</label>
+    						</div>
+    						<div class="input-field col s7">
+    							<input type="text" name="address">
+    							<label for="address">Address</label>
+    						</div>
+    					</div>
+
+    					<div class="row">
+    						<div class="input-field col s5">
+    							<input type="text" name="contact_person">
+    							<label for="contact_person">Contact Person</label>	
+    						</div>
+    						<div class="input-field col s3">
+    							<input type="text" name="city">
+    							<label for="city">City</label>
+    						</div>
+    						
+    						<div class="input-field col s1">
+    							<select>
+		      						<option value="" disabled selected></option>
+		      						<option value="1">AL</option>
+		      						<option value="2">AK</option>
+		      						<option value="3">AZ</option>
+		      						<option value="4">AR</option>
+		      						<option value="5">CA</option>
+		      						<option value="6">CO</option>
+		      						<option value="7">CT</option>
+		      						<option value="8">DE</option>
+		      						<option value="9">FL</option>
+		      						<option value="10">GA</option>
+		      						<option value="11">HI</option>
+		      						<option value="12">ID</option>
+		      						<option value="13">IL</option>
+		      						<option value="14">IN</option>
+		      						<option value="15">IA</option>
+		      						<option value="16">KS</option>
+		      						<option value="17">KY</option>
+		      						<option value="18">LA</option>
+		      						<option value="19">ME</option>
+		      						<option value="20">MD</option>
+		      						<option value="21">MA</option>
+		      						<option value="22">MI</option>
+		      						<option value="23">MN</option>
+		      						<option value="24">MS</option>
+		      						<option value="25">MO</option>
+		      						<option value="26">MT</option>
+		      						<option value="27">NE</option>
+		      						<option value="28">NV</option>
+		      						<option value="29">NH</option>
+		      						<option value="30">NJ</option>
+		      						<option value="31">NM</option>
+		      						<option value="32">NY</option>
+		      						<option value="33">NC</option>
+		      						<option value="34">ND</option>
+		      						<option value="35">OH</option>
+		      						<option value="36">OK</option>
+		      						<option value="37">OR</option>
+		      						<option value="38">PA</option>
+		      						<option value="39">RI</option>
+		      						<option value="40">SC</option>
+		      						<option value="41">SD</option>
+		      						<option value="42">TN</option>
+		      						<option value="43">TX</option>
+		      						<option value="44">UT</option>
+		      						<option value="45">VT</option>
+		      						<option value="46">VA</option>
+		      						<option value="47">WA</option>
+		      						<option value="48">WV</option>
+		      						<option value="49">WI</option>
+		      						<option value="50">WY</option>
+		    						</select>
+		    						<label>State</label>
+    						</div>
+    						<div class="input-field col s3">
+    							<input type="text" name="zip_code">
+    							<label for="zip_code">Zip Code</label>
+    						</div>
+    					</div>
+
+						<div class="row">
+							<div class="input-field col s5">
+								<select>
+							      <option value="" disabled selected></option>
+							      <option value="1">Medical</option>
+							      <option value="2">Construction</option>
+							      <option value="3">Automotive</option>
+							      <option value="4">Leander</option>
+							      <option value="5">Property Owner</option>
+							      <option value="6">Other</option>
+							    </select>
+							    <label>Business Type</label>
+							</div>
+
+							<div class="input-field col s3 right-align">
+								<input type="tel" name="bus_num">
+								<label for="bus_num">Business Number</label>
+							</div>
+						
+							<div class="input-field col s3 right-align">
+								<input type="tel" name="fax_num">
+								<label for="fax_nam">Fax Number</label>
+							</div>
+						</div>
+    				</div>
+    			</div>
+
+    			<div class="modal-footer">
+      			<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Done</a>
+    			</div>
+  			</div>
+
+
+		<div class="contact">
+			<div class="container">
+				
+				<form action="" id="">
+					<h5>Contact Information</h5>
+					
+					<div class="row">
+						<div class="input-field col s4">
+							<input type="text" name="first_name">
+							<label for="first_name">First Name</label>
+						</div>
+						<div class="input-field col s4">
+							<input type="text" name="last_name">
+							<label for="last_name">Last Name</label>
+						</div>
+					</div>
+					
+					<div class="row">
+						<div class="input-field col s7">
+							<input type="text" name="address">
+							<label for="address">Address</label>	
+						</div>
+						<div class="input-field col s5">
+							<input type="tel" name="phone_num">
+							<label for="phone_num">Phone Number</label>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="input-field col s3">
+							<input type="text" name="city">
+							<label for="city">City</label>
+						</div>
+						<div class="input-field col s1">
+							<select>
+      						<option value="" disabled selected></option>
+      						<option value="1">AL</option>
+      						<option value="2">AK</option>
+      						<option value="3">AZ</option>
+      						<option value="4">AR</option>
+      						<option value="5">CA</option>
+      						<option value="6">CO</option>
+      						<option value="7">CT</option>
+      						<option value="8">DE</option>
+      						<option value="9">FL</option>
+      						<option value="10">GA</option>
+      						<option value="11">HI</option>
+      						<option value="12">ID</option>
+      						<option value="13">IL</option>
+      						<option value="14">IN</option>
+      						<option value="15">IA</option>
+      						<option value="16">KS</option>
+      						<option value="17">KY</option>
+      						<option value="18">LA</option>
+      						<option value="19">ME</option>
+      						<option value="20">MD</option>
+      						<option value="21">MA</option>
+      						<option value="22">MI</option>
+      						<option value="23">MN</option>
+      						<option value="24">MS</option>
+      						<option value="25">MO</option>
+      						<option value="26">MT</option>
+      						<option value="27">NE</option>
+      						<option value="28">NV</option>
+      						<option value="29">NH</option>
+      						<option value="30">NJ</option>
+      						<option value="31">NM</option>
+      						<option value="32">NY</option>
+      						<option value="33">NC</option>
+      						<option value="34">ND</option>
+      						<option value="35">OH</option>
+      						<option value="36">OK</option>
+      						<option value="37">OR</option>
+      						<option value="38">PA</option>
+      						<option value="39">RI</option>
+      						<option value="40">SC</option>
+      						<option value="41">SD</option>
+      						<option value="42">TN</option>
+      						<option value="43">TX</option>
+      						<option value="44">UT</option>
+      						<option value="45">VT</option>
+      						<option value="46">VA</option>
+      						<option value="47">WA</option>
+      						<option value="48">WV</option>
+      						<option value="49">WI</option>
+      						<option value="50">WY</option>
+    						</select>
+    						<label>State</label>
+  						</div>
+						
+						<div class="input-field col s3">
+							<input type="text" name="zip_code">
+							<label for="zip_code">Zip Code</label>	
+						</div>
+						<div class="input-field col s5">
+							<input type="tel" name="other">
+							<label for="other">Other Number</label>
+						</div>
 						</div>
 
+
 					</div>
-			</form>
+				</form>
+			</div>
 		</div>
-	</div>
+
+
+		<div class="defendant">
+			<div class="container">
+				<h5>Defendant Information</h5>
+				<form action="" id="">
+					
+					<div class="row input-field col s5">
+						<input type="text" name="def_count">
+						<label for="def_count">How many defendants are there?</label>
+					</div>
+
+					
+					<div class="row">
+						<div class="input-field col s5">
+							<input type="text" name="def_first">
+							<label for="def_first">First Name</label>
+						</div>
+						<div class="input-field col s5">
+							<input type="text" name="def_last">
+							<label for="def_last">Last Name</label>							
+						</div>
+						<div class="input-field col s2">
+							<input type="text" name="mi">
+							<label for="mi">MI</label>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="input-field col s8">
+							<input type="text" name="def_add">
+							<label for="def_add">Address</label>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="input-field col s3">
+							<input type="text" name="def_city">
+							<label for="def_city">City</label>
+						</div>
+						<div class="input-field col s2">
+							<select>
+      						<option value="" disabled selected></option>
+      						<option value="1">AL</option>
+      						<option value="2">AK</option>
+      						<option value="3">AZ</option>
+      						<option value="4">AR</option>
+      						<option value="5">CA</option>
+      						<option value="6">CO</option>
+      						<option value="7">CT</option>
+      						<option value="8">DE</option>
+      						<option value="9">FL</option>
+      						<option value="10">GA</option>
+      						<option value="11">HI</option>
+      						<option value="12">ID</option>
+      						<option value="13">IL</option>
+      						<option value="14">IN</option>
+      						<option value="15">IA</option>
+      						<option value="16">KS</option>
+      						<option value="17">KY</option>
+      						<option value="18">LA</option>
+      						<option value="19">ME</option>
+      						<option value="20">MD</option>
+      						<option value="21">MA</option>
+      						<option value="22">MI</option>
+      						<option value="23">MN</option>
+      						<option value="24">MS</option>
+      						<option value="25">MO</option>
+      						<option value="26">MT</option>
+      						<option value="27">NE</option>
+      						<option value="28">NV</option>
+      						<option value="29">NH</option>
+      						<option value="30">NJ</option>
+      						<option value="31">NM</option>
+      						<option value="32">NY</option>
+      						<option value="33">NC</option>
+      						<option value="34">ND</option>
+      						<option value="35">OH</option>
+      						<option value="36">OK</option>
+      						<option value="37">OR</option>
+      						<option value="38">PA</option>
+      						<option value="39">RI</option>
+      						<option value="40">SC</option>
+      						<option value="41">SD</option>
+      						<option value="42">TN</option>
+      						<option value="43">TX</option>
+      						<option value="44">UT</option>
+      						<option value="45">VT</option>
+      						<option value="46">VA</option>
+      						<option value="47">WA</option>
+      						<option value="48">WV</option>
+      						<option value="49">WI</option>
+      						<option value="50">WY</option>
+    						</select>
+    						<label>State</label>
+						</div>
+						<div class="input-field col s3">
+							<input type="text" name="def_zip">
+							<label for="def_zip">Zip Code</label>	
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col s3">
+							<a class="waves-effect waves-light btn lime accent-3">Add</a>
+							<span>Another Address</span>
+
+							
+						</div>
+						
+					</div>
+				</form>
+			</div>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 
 	<script>
+
 		$(document).ready(function() {
     	$('select').material_select();
   	});
+		window.modalName = '';
+
+		$('.js-change-modal').on('click', function() {
+  			var _this = $(this);
+  			window.modalName = _this.attr('data-modal');
+	});
+		
+		$(document).ready(function(){
+    	$('.modal').modal();
+  	});
+		$(document).ready(function() {
+    	$('select').material_select();
+  });
 	</script>
 </body>
 </html>
