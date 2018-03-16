@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Information</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="css/contact_style.css">
+
+</head>
+<body>
+				
+
+		<nav>
+			<div class="nav-wrapper  teal darken-3">
+			<a href="#" class="brand-logo">ServeDaddy</a>
+				<ul id="nav-mobile" class="right hide-on-med-and-down">
+			       	<li><a href="#">Home</a></li>
+			        <li><a href="#">Serve Document</a></li>
+			        <li><a href="#">Serve for us</a></li>
+			        <li><a href="#">About Us</a></li>
+			        <li><a href="#">Contact Us</a></li>
+			     </ul>
+			</div>
+		</nav>
+
+
+		<div class="container">
+			<div class="row col s12 center">
+				<h5>Contact Information</h5>	
+			</div>
+			<form action="" id="">
+				
+				<div class="row lines">
+					<div class="input-field col s5">
+						<input type="text" name="first">
+						<label for="first">First Name</label>
+					</div>
+					<div class="input-field col s5">
+						<input type="text" name="last">
+						<label for="last">Last Name</label>
+					</div>
+				</div>
+
+				<div class="row lines">
+					<div class="input-field col s8">
+						<input type="text" name="add">
+						<label for="add">Address</label>	
+					</div>
+				</div>
+
+				<div class="row lines">
+					<div class="input-field col s3">
+						<input type="text" name="city">
+						<label for="city">City</label>
+					</div>
+					<div class="input-field col s2">
+								<select>
+		      						<option value="AL">AL</option>
+		      						<option value="AK">AK</option>
+		      						<option value="AZ">AZ</option>
+		      						<option value="AR">AR</option>
+		      						<option value="CA">CA</option>
+		      						<option value="CO">CO</option>
+		      						<option value="CT">CT</option>
+		      						<option value="DE">DE</option>
+		      						<option value="FL">FL</option>
+		      						<option value="GA">GA</option>
+		      						<option value="HI">HI</option>
+		      						<option value="ID">ID</option>
+		      						<option value="IL">IL</option>
+		      						<option value="IN">IN</option>
+		      						<option value="IA">IA</option>
+		      						<option value="KS">KS</option>
+		      						<option value="KY">KY</option>
+		      						<option value="LA">LA</option>
+		      						<option value="ME">ME</option>
+		      						<option value="MD">MD</option>
+		      						<option value="MA">MA</option>
+		      						<option value="MI">MI</option>
+		      						<option value="MN">MN</option>
+		      						<option value="MS">MS</option>
+		      						<option value="MO">MO</option>
+		      						<option value="MT">MT</option>
+		      						<option value="NE">NE</option>
+		      						<option value="NV">NV</option>
+		      						<option value="NH">NH</option>
+		      						<option value="NJ">NJ</option>
+		      						<option value="MN">NM</option>
+		      						<option value="NY">NY</option>
+		      						<option value="NC">NC</option>
+		      						<option value="ND">ND</option>
+		      						<option value="OH">OH</option>
+		      						<option value="OK">OK</option>
+		      						<option value="OR">OR</option>
+		      						<option value="PA">PA</option>
+		      						<option value="RI">RI</option>
+		      						<option value="SC">SC</option>
+		      						<option value="SD">SD</option>
+		      						<option value="TN">TN</option>
+		      						<option value="TX">TX</option>
+		      						<option value="UT">UT</option>
+		      						<option value="VT">VT</option>
+		      						<option value="VA">VA</option>
+		      						<option value="WA">WA</option>
+		      						<option value="WV">WV</option>
+		      						<option value="WI">WI</option>
+		      						<option value="WY">WY</option>
+		    						</select>
+		    						<label>State</label>	
+					</div>
+					<div class="input-field col s3">
+						<input type="text" name="zip">
+						<label for="zip">Zip Code</label>	
+					</div>
+				</div>
+
+				<div class="row lines">
+					<div class="input-field col s4">
+						<input type="tel" name="phone">
+						<label for="phone">Telephone Number</label>
+					</div>
+					<div class="col s7 right-align">
+						<a class="waves-effect waves-light btn orange lighten-1">NEXT</a>		
+						
+					</div>
+				</div>
+
+			</form>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+	<script> $(document).ready(function(){
+			  $('.modal').modal();
+			  $('select').material_select();
+
+			  // to switch the modal info
+			  window.modalName = '';
+			  $('.js-change-modal').on('click', function() {
+			    var _this = $(this);
+			    window.modalName = _this.attr('data-modal');
+			  });
+			  
+			});
+	</script>
+
+
+
+
+
+
+</body>
+</html>

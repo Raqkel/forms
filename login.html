@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Create Login</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="css/loginstyle.css">
+
+
+</head>
+<body>
+
+	<nav>
+    	<div class="nav-wrapper  teal darken-3">
+      	<a href="#" class="brand-logo">ServeDaddy</a>
+      		<ul id="nav-mobile" class="right hide-on-med-and-down">
+        		<li><a href="#">Home</a></li>
+        		<li><a href="#">Serve Document</a></li>
+        		<li><a href="#">Serve for us</a></li>
+        		<li><a href="#">About Us</a></li>
+        		<li><a href="#">Contact Us</a></li>
+      		</ul>
+    	</div>
+  	</nav>
+
+
+<!--Create login-->
+  		<div class="container">
+  			<div class="row col s12 center">
+  				<h5>Create Login</h5>
+  			</div>
+
+			
+  			<form action="" id="">
+  				<div class="row lines">
+  					<div class="input-field col s4 vertical-align ">
+  						<input type="email" name="email">
+  						<label for="email">Email</label>
+  					</div>
+  				</div>
+
+  				<div class="row lines">
+  					<div class="input-field col s4 vertical-align">
+  						<input type="text" name="pass">
+  						<label for="pass">Password</label>
+  					</div>	
+
+  					<div class="col s8 center-align">
+  						<h6>Are you a :</h6>
+  						<input type="radio" name="type" class="js-change-modal" data-modal="businessModal" name="business">
+  						<label for="type">Business</label>
+  						<input type="radio" name="type" class="js-change-modal" data-modal="lawfirmModal" name="lawfirm">
+  						<label for="type">Lawfirm</label>
+  					</div>		
+  				</div>
+  				
+  				<div class="row lines">
+  					<div class="input-field col s4 vertical-align">
+  						<input type="text" name="confirm">
+  						<label for="confirm">Confirm</label>
+  					</div>
+  					<div class="col s8 center-align ">
+              <a href="file:///Users/raquelnunez/Desktop/code/forms/Contact.html" class="waves-effect waves-light btn orange lighten-1">NEXT</a>			
+  					</div>
+  				</div>	
+  			</form>
+  		</div>
+
+
+
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+	
+<script>
+
+	$(document).ready(function(){
+			  $('.modal').modal();
+			  $('select').material_select();
+
+			  // to switch the modal info
+			  window.modalName = '';
+			  $('.js-change-modal').on('click', function() {
+			    var _this = $(this);
+			    window.modalName = _this.attr('data-modal');
+			  });
+			  
+			});
+		
+	</script>
+
+
+
+</body>
+</html>
