@@ -1,58 +1,57 @@
+
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Defendant Intake</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="css/main.css">
-  </head>
-  <body>
-    <nav>
-      <div class="nav-wrapper  teal darken-3">
-        <a href="#" class="brand-logo">ServeDaddy</a>
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Serve Document</a></li>
-          <li><a href="#">Serve for us</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Contact Us</a></li>
-        </ul>
-      </div>
-    </nav>
-    <div class="container">
-      <div class="row col s12 center">
-        <h5>Defendant Information</h5>
-      </div>
-      <form action="" id="">
+<head>
+  <title>Process Server App</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+          <nav>
+            <div class="nav-wrapper  teal darken-3">
+              <a href="#" class="brand-logo">ServeDaddy</a>
+              <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Serve Document</a></li>
+                <li><a href="#">Serve for us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Login</a></li>
+              </ul>
+            </div>
+          </nav>
+
+      <div class="container">
+        <div class="row col s12 center">
+          <h5>Application</h5>
+        </div>
+
+        <div class="row lines">
+          <div class="input-field col s5">
+            <input type="text" name="ser_first">
+            <label for="ser_first">First Name</label>
+          </div>
+          <div class="input-field col s5">
+            <input type="text" name="ser_last">
+            <label for="ser_last">Last Name</label>
+          </div>
+        </div>
+
+        <div class="row lines">
+          <div class="input-field col s6">
+            <input type="text" name="ser_add">
+            <label>Address</label>
+          </div>
+        </div>
+
         <div class="row lines">
           <div class="input-field col s3">
-            <input type="text" name="def_num">
-            <label for="def_num">How many defendants</label>
-          </div>
-        </div>
-        <div class="row lines">
-          <div class="input-field col s4">
-            <input type="text" name="def_first">
-            <label for="def_first">First Name</label>
-          </div>
-          <div class="input-field col s4">
-            <input type="text" name="def_last">
-            <label for="def_last">Last Name</label>
-          </div>
-        </div>
-        <div class="row lines">
-          <div class="input-field col s7">
-            <input type="text" name="def_add">
-            <label for="def_add">Address</label>
-          </div>
-        </div>
-        <div class="row lines">
-          <div class="input-field col s3">
-            <input type="text" name="def_city">
-            <label for="def_city">City</label>
+            <input type="text" name="ser_city">
+            <label>City</label>
           </div>
           <div class="input-field col s1">
-            <select>
+            <select name="ser_state">
               <option value="AL">AL</option>
               <option value="AK">AK</option>
               <option value="AZ">AZ</option>
@@ -104,41 +103,58 @@
               <option value="WI">WI</option>
               <option value="WY">WY</option>
             </select>
-            <label>State</label>
           </div>
-          <div class="row lines">
-            <div class="input-field col s3">
-              <input type="text" name="def_zip">
-              <label for="def_zip">Zip Code</label>
-            </div>
+          <div class="input-field col s3">
+            <input type="text" name="ser_zip">
+            <label>Zip Code</label>
           </div>
-          <div class="row lines">
-            <a class="waves-effect waves-light btn modal-trigger orange lighten-1" href="#modal1">Additional Address</a>
-            
-            <!--MODAL-->
-            <div id="modal1" class="modal bottom-sheet">
-              <div class="modal-content">
-                <div class="row lines">
-                  <div class="input-field col s4">
-                    <input type="text" name="def_first">
-                    <label for="def_first">First Name</label>
-                  </div>
-                  <div class="input-field col s4">
-                    <input type="text" name="def_last">
-                    <label for="def_last">Last Name</label>
-                  </div>
-                </div>
-              </div>
-              <div class="modal-footer">
-                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">DONE</a>
-              </div>
-            </div>
-            
-          </div>
-          
         </div>
-      </form>
-    </div>
+
+        <div class="row lines">
+          <div class="col s1">
+            <select name="dob">
+              <option value="Jan">Jan</option>
+              <option value="Feb">Feb</option>
+              <option value="Mar">Mar</option>
+              <option value="Apr">Apr</option>
+              <option value="May">May</option>
+              <option value="Jun">Jun</option>
+              <option value="Jul">Jul</option>
+              <option value="Aug">Aug</option>
+              <option value="Sep">Sep</option>
+              <option value="Oct">Oct</option>
+              <option value="Nov">Nov</option>
+              <option value="Dec">Dec</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     <script>
@@ -154,5 +170,9 @@
         
         });
     </script>
-  </body>
+
+
+
+
+</body>
 </html>

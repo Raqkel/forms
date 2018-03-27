@@ -6,13 +6,23 @@ body {
   background-color: #DCDCDC;
 }
 
-.container {
+.nav-wrapper li{
+  font-family: ab lorness;
+  padding-right: 20px;
+}
+
+.container, .container-mod {
   background-color: white;
   margin-top: 100px;
 }
 
+.login{
+  padding-bottom: 40px;
+}
+
 .brand-logo {
   margin-left: 20px;
+  font-family: ab lorness;
 }
 
 .lines {
@@ -22,4 +32,25 @@ body {
 
 h5 {
   padding-top:20px;
+  font-family: belwe;
+}
+
+.container-mod {
+  margin: 15px;
+}
+
+#modal1 {
+  background-color: #DCDCDC;
+
+}
+
+.reg {
+ margin-top:40px;
+}
+.ps_lines {
+  padding-left: 200px;
+}
+
+.ps_login {
+  padding: 80px 80px;
 }
