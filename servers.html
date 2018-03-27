@@ -1,0 +1,178 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Process Server App</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+          <nav>
+            <div class="nav-wrapper  teal darken-3">
+              <a href="#" class="brand-logo">ServeDaddy</a>
+              <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Serve Document</a></li>
+                <li><a href="#">Serve for us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Login</a></li>
+              </ul>
+            </div>
+          </nav>
+
+      <div class="container">
+        <div class="row col s12 center">
+          <h5>Application</h5>
+        </div>
+
+        <div class="row lines">
+          <div class="input-field col s5">
+            <input type="text" name="ser_first">
+            <label for="ser_first">First Name</label>
+          </div>
+          <div class="input-field col s5">
+            <input type="text" name="ser_last">
+            <label for="ser_last">Last Name</label>
+          </div>
+        </div>
+
+        <div class="row lines">
+          <div class="input-field col s6">
+            <input type="text" name="ser_add">
+            <label>Address</label>
+          </div>
+        </div>
+
+        <div class="row lines">
+          <div class="input-field col s3">
+            <input type="text" name="ser_city">
+            <label>City</label>
+          </div>
+          <div class="input-field col s1">
+            <select name="ser_state">
+              <option value="AL">AL</option>
+              <option value="AK">AK</option>
+              <option value="AZ">AZ</option>
+              <option value="AR">AR</option>
+              <option value="CA">CA</option>
+              <option value="CO">CO</option>
+              <option value="CT">CT</option>
+              <option value="DE">DE</option>
+              <option value="FL">FL</option>
+              <option value="GA">GA</option>
+              <option value="HI">HI</option>
+              <option value="ID">ID</option>
+              <option value="IL">IL</option>
+              <option value="IN">IN</option>
+              <option value="IA">IA</option>
+              <option value="KS">KS</option>
+              <option value="KY">KY</option>
+              <option value="LA">LA</option>
+              <option value="ME">ME</option>
+              <option value="MD">MD</option>
+              <option value="MA">MA</option>
+              <option value="MI">MI</option>
+              <option value="MN">MN</option>
+              <option value="MS">MS</option>
+              <option value="MO">MO</option>
+              <option value="MT">MT</option>
+              <option value="NE">NE</option>
+              <option value="NV">NV</option>
+              <option value="NH">NH</option>
+              <option value="NJ">NJ</option>
+              <option value="MN">NM</option>
+              <option value="NY">NY</option>
+              <option value="NC">NC</option>
+              <option value="ND">ND</option>
+              <option value="OH">OH</option>
+              <option value="OK">OK</option>
+              <option value="OR">OR</option>
+              <option value="PA">PA</option>
+              <option value="RI">RI</option>
+              <option value="SC">SC</option>
+              <option value="SD">SD</option>
+              <option value="TN">TN</option>
+              <option value="TX">TX</option>
+              <option value="UT">UT</option>
+              <option value="VT">VT</option>
+              <option value="VA">VA</option>
+              <option value="WA">WA</option>
+              <option value="WV">WV</option>
+              <option value="WI">WI</option>
+              <option value="WY">WY</option>
+            </select>
+          </div>
+          <div class="input-field col s3">
+            <input type="text" name="ser_zip">
+            <label>Zip Code</label>
+          </div>
+        </div>
+
+        <div class="row lines">
+          <div class="col s1">
+            <select name="dob">
+              <option value="Jan">Jan</option>
+              <option value="Feb">Feb</option>
+              <option value="Mar">Mar</option>
+              <option value="Apr">Apr</option>
+              <option value="May">May</option>
+              <option value="Jun">Jun</option>
+              <option value="Jul">Jul</option>
+              <option value="Aug">Aug</option>
+              <option value="Sep">Sep</option>
+              <option value="Oct">Oct</option>
+              <option value="Nov">Nov</option>
+              <option value="Dec">Dec</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $('.modal').modal();
+        $('select').material_select();
+        // to switch the modal info
+        window.modalName = '';
+        $('.js-change-modal').on('click', function() {
+        var _this = $(this);
+        window.modalName = _this.attr('data-modal');
+        });
+        
+        });
+    </script>
+
+
+
+
+</body>
+</html>

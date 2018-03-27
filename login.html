@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+    <nav>
+      <div class="nav-wrapper  teal darken-3">
+        <a href="#" class="brand-logo">ServeDaddy</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="#">Home</a></li>
+          <li><a href="file:///Users/raquelnunez/Desktop/code/forms/new_def.html">Serve Document</a></li>
+          <li><a href="file:///Users/raquelnunez/Desktop/code/forms/servers.html">Serve for us</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="file:///Users/raquelnunez/Desktop/code/forms/login.html">Login</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container login">
+      <div class="row col s12 center">
+      </div>
+
+      <div class="row lines">
+        <div class="input-field col s5">
+          <input type="email" name="log_email">
+          <label for="log_email">Email</label>
+        </div>
+        <div class="col s7 center-align">
+          <h5>New Client</h5>  
+        </div>
+      </div>
+
+      <div class="row lines">
+        <div class="input-field col s5">
+          <input type="text" name="log_pass">
+          <label for="log_pass">Password</label>
+        </div>
+        <div class="col s7 center-align reg">
+          <a class="waves-effect waves-light pulse btn orange lighten-1" href=file:///Users/raquelnunez/Desktop/code/forms/new_login.html>Register Now</a> 
+        </div>
+      </div>
+
+      <div class="row lines">
+        <div class="col s3">
+          <a href="">Forget your password</a>
+        </div>
+        <div class="col s4">
+          <button class="waves-effect waves-light btn orange lighten-1">Login</button>
+        </div>
+        <div class="col s6">
+          <a href="file:///Users/raquelnunez/Desktop/code/forms/ps_login.html">Process Server?</a>  
+        </div>
+      </div>
+      
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script> $(document).ready(function(){
+        $('.modal').modal();
+        $('select').material_select();
+        // to switch the modal info
+        window.modalName = '';
+        $('.js-change-modal').on('click', function() {
+        var _this = $(this);
+        window.modalName = _this.attr('data-modal');
+        });
+        
+        });
+    </script>
+</body>
+</html>
